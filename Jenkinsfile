@@ -1,11 +1,11 @@
-pipeline{
-  agent any{
-    stages{
-      stage{
-        stape{
-          echo "git pipeline"
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
         }
-      }
     }
-  }
 }
